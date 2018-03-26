@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Storage</title>
+    <script src="storage.js"></script>
+    <style>
+        table td, th {
+            border: 1px solid;
+            padding: 10px;
+        }
+
+        table {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="users">
+        <table>
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>LastName</th>
+                <th>Age</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr><td id='no-user-message' colspan='3'>No users</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="new-user">
+        <form>
+            <label>
+                Name:
+                <input name="name">
+            </label>
+            <label>
+                Last Name:
+                <input name="lastname">
+            </label>
+            <label>
+                Age:
+                <input name="age" type="number">
+            </label>
+            <button>Add user</button>
+        </form>
+    </div>
+</body>
+</html>

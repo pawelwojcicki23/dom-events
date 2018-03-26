@@ -15,11 +15,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
   //setClickOnButtonInOrange();
   //setClickOnButtonInOrangeBubbling();
   //setClickOnButtonInOrangeBubblingBody();
-  changeColorAfterButtonClick();
-  orangeDivListener();
-  mouseHandlers();
-  scrollEvent();
-  formChangeEvents();
+  //changeColorAfterButtonClick();
+  //orangeDivListener();
+  //mouseHandlers();
+  //scrollEvent();
+  //formChangeEvents();
+  textarea();
 });
 
 // FUNCKJE DOTYCZACE CZASU
@@ -155,5 +156,16 @@ const formChangeEvents = () => {
   const select = document.querySelector('#car-form select');
   select.addEventListener('change', (e) => {
     div.innerText = e.currentTarget.value;
+  });
+}
+
+const textarea = () => {
+  const div = document.querySelector('#right-box')
+  const ta = document.querySelector('textarea');
+  ta.addEventListener('keypress', (e) => {
+    console.log(e.key);
+    if (e.key === 'Enter') {
+      const message = document.createElement('p')
+    }
   });
 }
